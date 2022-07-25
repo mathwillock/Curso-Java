@@ -3,17 +3,6 @@ package fundamentos.desafios;
 public class DesafiosAritimeticos {
 
     public static void main(String[] args) {
-        /*
-            int a = 3*4-10;
-            int b = (int) Math.pow(a, 3);
-            double c = Math.pow(a, 3);
-
-            System.out.println(b);
-            System.out.println(c);
-
-         */
-
-        // desafio
         var a = 3+2;
         var b = Math.pow((6*a),2);
         var c = b / (3*2);
@@ -35,6 +24,5 @@ public class DesafiosAritimeticos {
 
         int resultadoFinal = (int) (i / j);
         System.out.println(resultadoFinal); // 125.0
-
     }
 }
