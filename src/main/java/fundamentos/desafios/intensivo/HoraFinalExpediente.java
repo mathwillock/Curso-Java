@@ -47,7 +47,4 @@ public class HoraFinalExpediente {
         return tempoTotal - (inicioAlmoco - inicioExpediente);
     }
 
-
-
-
 }
