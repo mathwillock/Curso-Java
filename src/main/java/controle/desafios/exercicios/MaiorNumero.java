@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MaiorNumero {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         int validador = 0;
@@ -22,7 +21,6 @@ public class MaiorNumero {
         System.out.println("O maior número digitado foi: " + validador);
 
         scanner.close();
-
     }
 
 }
