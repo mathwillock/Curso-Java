@@ -24,14 +24,24 @@ public class Escola {
         ArrayList<Aluno> alunosA = new ArrayList<>();
         Turma turmaA = new Turma("A", alunosA);
 
-        ArrayList<Aluno> alunosB = new ArrayList<>();
+        var alunoA =
+                new Aluno(
+                        1, "João", "José",  "123.456.789-00", sdf.parse("28/02/2013")
+                );
+        var alunoB =
+                new Aluno(
+                        2, "Maria", "das Dores", "987.654.321-00", sdf.parse("29/02/2013")
+                );
+        var alunoC =
+                new Aluno(3, "Ana", "Severina", "987.654.321-00", sdf.parse("13/02/2013")
+                );
+        var alunoD =
+                new Aluno(4, "José", "Couves", "987.654.321-00", sdf.parse("07/11/2013")
+                );
 
-        var alunoA = new Aluno(1, "João", "José",  "123.456.789-00", sdf.parse("28/02/2013"));
-        var alunoB = new Aluno(2, "Maria", "das Dores", "987.654.321-00", sdf.parse("29/02/2013"));
-        var alunoC = new Aluno(3, "Ana", "Severina", "987.654.321-00", sdf.parse("13/02/2013"));
-        var alunoD = new Aluno(4, "José", "Couves", "987.654.321-00", sdf.parse("07/11/2013"));
-
-        var aluno1 = new Aluno(1, "João", "da Silva", "123.456.789-77", sdf.parse("28/02/2013"));
+        var aluno1 =
+                new Aluno(1, "João", "da Silva", "123.456.789-77", sdf.parse("28/02/2013")
+                );
 
         System.out.println("---------Adicionando alunos na turma A-----------");
         System.out.println(adicionarAluno(alunoA, turmaA));
@@ -96,7 +106,6 @@ public class Escola {
         return "Aluno da matricula " + matriculaAluno + " não existe!";
     }
 
-//    Listar o nome do aluno mais idoso;
     static String nomeMaisIdoso(Turma turma) {
         String nomeMaisIdoso = "";
         var aluno = turma.alunos;
@@ -113,7 +122,6 @@ public class Escola {
         return nomeMaisIdoso;
     }
 
-//    Listar a média de idade os alunos;
     static String mediaIdade(Turma turma) {
         double somaIdade = 0;
         double mediaIdade = 0;
