@@ -1,12 +1,8 @@
 package collections.intensivo;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Escola {
 
@@ -127,9 +123,9 @@ public class Escola {
         double mediaIdade = 0;
         var aluno = turma.alunos;
 
-        for(int i = 0; i < aluno.size(); i++){
+        for (Aluno value : aluno) {
 
-            somaIdade += aluno.get(i).nascimento.getTime();
+            somaIdade += value.nascimento.getTime();
         }
         mediaIdade = somaIdade / aluno.size();
 
